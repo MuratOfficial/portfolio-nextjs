@@ -6,4 +6,5 @@ html,
 body,
 :root {
   height: 100%;
+  background-color: rgba(30, 30, 38, 1);
 }
