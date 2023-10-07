@@ -1,4 +1,5 @@
 import AboutExperience from "@/components/ui/about-experience";
+import CareerPath from "@/components/ui/career-path";
 import Contacts from "@/components/ui/contacts";
 import Expertise from "@/components/ui/expertise";
 import Hero from "@/components/ui/hero";
@@ -9,7 +10,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-16">
+    <main className="flex min-h-screen flex-col items-center justify-between ">
       {/*Start of Main Hero Block */}
       <Hero />
 
@@ -20,9 +21,9 @@ export default function Home() {
 
       {/*Start of Projects Preview Collage Block */}
       <AboutExperience />
+      {/**Career Path block */}
+      <CareerPath />
 
-      {/*Testimonials Block */}
-      <Testimonials />
       {/*Contacts Block */}
       <Contacts />
     </main>

@@ -1,5 +1,4 @@
 "use client";
-import Footer from "@/components/ui/footer";
 import "./globals.css";
 
 import { Inter, Poppins } from "next/font/google";
@@ -25,7 +24,6 @@ export default function RootLayout({
       <body className={poppins.className}>
         <Navbar />
         {children}
-        <Footer />
       </body>
     </html>
   );

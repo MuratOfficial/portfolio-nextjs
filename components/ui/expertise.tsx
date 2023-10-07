@@ -30,7 +30,7 @@ function Expertise() {
   ];
 
   return (
-    <section className="h-full flex flex-col pb-80">
+    <section className="h-full flex flex-col pb-80 p-16">
       {/*Header */}
       <p className="text-center text-white text-7xl py-8 mb-4 font-medium">
         My Expertise

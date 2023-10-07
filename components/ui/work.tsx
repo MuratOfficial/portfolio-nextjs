@@ -3,7 +3,7 @@ import AnimateSpecific from "@/components/animation/animate-specific";
 
 function Work() {
   return (
-    <section className="h-full w-full flex pb-4">
+    <section className="h-full w-full flex pb-4 p-16">
       <div className="h-screen w-full flex flex-row gap-x-8">
         <div className="h-screen w-2/5 flex flex-col gap-y-8">
           <p className="h-2/5 w-1/2 text-[104px] font-semibold drop-shadow-md text-neutral-100 leading-[124px] text-left">
@@ -19,7 +19,7 @@ function Work() {
         {/** Here will be Animated component */}
         <div className="h-screen w-3/5 relative">
           <AnimateSpecific />
-          <div className="h-1/5 w-full bottom-8 left-8 absolute flex flex-col gap-y-4 ">
+          <div className="h-1/5 w-full bottom-6 left-8 absolute flex flex-col gap-y-4 ">
             <p className="font-mono font-bold text-3xl drop-shadow-md text-neutral-100">
               LML Web App
             </p>

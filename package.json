@@ -9,11 +9,14 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "clsx": "^2.0.0",
     "gsap": "^3.12.2",
     "locomotive-scroll": "^4.1.4",
+    "lucide-react": "^0.284.0",
     "next": "latest",
     "react": "latest",
-    "react-dom": "latest"
+    "react-dom": "latest",
+    "tailwind-merge": "^1.14.0"
   },
   "devDependencies": {
     "@svgr/webpack": "^8.1.0",
