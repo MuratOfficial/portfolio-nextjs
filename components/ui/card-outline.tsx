@@ -14,7 +14,10 @@ interface CardOutlineProps {
 
 function CardOutline({ data }: CardOutlineProps) {
   return (
-    <div className="h-[360px] lg:w-[380px]   border-x-2 border-y-4 border-neutral-400 p-4 px-8 py-4 flex flex-col">
+    <div
+      id={data.bgColor}
+      className="h-[360px] lg:w-[380px]   border-x-2 border-y-4 border-neutral-400 p-4 px-8 py-4 flex flex-col"
+    >
       <div className="flex flex-row h-1/3 pt-6 ">
         <div className="h-20 w-1/4">{data.img}</div>
         <div className="relative flex flex-col">

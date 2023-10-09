@@ -1,5 +1,5 @@
 import React from "react";
-import { AnimateScrollDown } from "../animation/animate-scroll-down";
+import { FadeInBlocksVertical } from "../animation/basic-load-animation";
 
 function Hero() {
   return (
@@ -12,7 +12,11 @@ function Hero() {
         SOFTWARE ENGINEER, FRONT END & APP DEVELOPER
       </p>
       {/**btn svg should be here */}
-      <button className="p-4 flex justify-center mt-8">btnsvg</button>
+      <FadeInBlocksVertical>
+        <button className="p-4 flex justify-center mt-8 text-white">
+          btnsvg
+        </button>
+      </FadeInBlocksVertical>
     </div>
   );
 }

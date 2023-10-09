@@ -30,28 +30,6 @@ export function AnimateInfiniteHorizontal({
   return <div ref={block}>{children}</div>;
 }
 
-export function FadeInBlocks({ children }: { children: React.ReactNode }) {
-  const block = useRef(null);
-
-  useLayoutEffect(() => {
-    gsap.fromTo(
-      block.current,
-      {
-        x: 60,
-        opacity: 0,
-      },
-      {
-        duration: 1,
-        x: 0,
-        delay: 0.5,
-        opacity: 1,
-      }
-    );
-  }, []);
-
-  return <div ref={block}>{children}</div>;
-}
-
 export function FadeInScroll({ children }: { children: React.ReactNode }) {
   const block = useRef(null);
 

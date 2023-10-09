@@ -8,6 +8,13 @@ import Testimonials from "@/components/ui/testimonials";
 import Work from "@/components/ui/work";
 import Image from "next/image";
 
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "toimetm Portfolio",
+  description: "Toimet Murat's Portfolio",
+};
+
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between ">

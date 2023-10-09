@@ -1,14 +1,18 @@
 import React from "react";
 import AnimateSpecific from "@/components/animation/animate-specific";
+import { AnimateScrollDown } from "../animation/animate-scroll-down";
 
 function Work() {
   return (
     <section className="h-full w-full flex pb-4 p-16">
       <div className="h-screen w-full flex flex-row gap-x-8">
-        <div className="h-screen w-2/5 flex flex-col gap-y-8">
-          <p className="h-2/5 w-1/2 text-[104px] font-semibold drop-shadow-md text-neutral-100 leading-[124px] text-left">
-            My Work
-          </p>
+        <div className="h-max w-2/5 flex flex-col gap-y-8">
+          <AnimateScrollDown>
+            <p className="h-2/5 w-1/2 text-[104px] font-semibold drop-shadow-md text-neutral-100 leading-[124px] text-left">
+              My Work
+            </p>
+          </AnimateScrollDown>
+
           <p className="h-3/5 w-full font-mono text-neutral-100 text-2xl leading-7 drop-shadow-md">
             Deployed scalable travel, event and telemedicine web and hybrid
             mobile apps using React SPA and PWA. Collaborated in 140+ projects
