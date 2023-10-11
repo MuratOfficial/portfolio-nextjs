@@ -14,7 +14,7 @@ function AboutExperience() {
   ];
 
   return (
-    <div className="w-full flex flex-col p-16">
+    <div className="w-full flex flex-col p-16" id="experience">
       <AnimateScrollDownHorizontalLeft>
         <div className="text-neutral-500 flex flex-row font-sans text-lg font-semibold mb-8">
           <p className="pr-2">Filter by</p>

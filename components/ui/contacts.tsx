@@ -14,7 +14,7 @@ function Contacts() {
     { name: "Github", href: "www.github.com" },
   ];
   return (
-    <section className="w-full h-full flex flex-row ">
+    <section className="w-full h-full flex flex-row " id="contact">
       <div className="w-5/12 h-[840px] bg-black flex flex-col p-16">
         <div className="h-1/2 w-full py-8 px-4 flex flex-col text-neutral-300 gap-y-16 justify-center items-center text-left">
           <AnimateScrollDownHorizontalLeft>

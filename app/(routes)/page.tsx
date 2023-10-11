@@ -9,6 +9,8 @@ import Work from "@/components/ui/work";
 import Image from "next/image";
 
 import type { Metadata } from "next";
+import StickyNavbar from "@/components/ui/sticky-navbar";
+import GoUp from "@/components/ui/go-up";
 
 export const metadata: Metadata = {
   title: "toimetm Portfolio",
@@ -17,9 +19,12 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between ">
+    <main className="flex min-h-screen flex-col items-center justify-between relative">
+      <StickyNavbar />
+
       {/*Start of Main Hero Block */}
       <Hero />
+      <GoUp />
 
       {/*Start of Expertise Block */}
       <Expertise />

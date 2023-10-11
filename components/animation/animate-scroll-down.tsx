@@ -202,3 +202,36 @@ export function AnimateScrollDownGroup3({
   }, []);
   return <div ref={block}>{children}</div>;
 }
+
+// export function AnimateScrollDownNavbar({
+//   children,
+// }: {
+//   children: React.ReactNode;
+// }) {
+//   const block = useRef(null);
+
+//   useLayoutEffect(() => {
+//     gsap.registerPlugin(ScrollTrigger);
+//     gsap.fromTo(
+//       block.current,
+//       {
+//         y: 200,
+//         opacity: 0,
+//       },
+//       {
+//         scrollTrigger: {
+//           trigger: block.current,
+//           toggleActions: "play none none none",
+//           start: "top 95%",
+//           end: "bottom 70%",
+//           // scrub: true,
+//         },
+//         y: 0,
+//         duration: 0.5,
+//         opacity: 1,
+//         ease: "none",
+//       }
+//     );
+//   }, []);
+//   return <div ref={block}>{children}</div>;
+// }

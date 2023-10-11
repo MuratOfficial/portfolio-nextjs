@@ -4,7 +4,7 @@ import { AnimateScrollDown } from "../animation/animate-scroll-down";
 
 function Work() {
   return (
-    <section className="h-full w-full flex pb-4 p-16">
+    <section className="h-full w-full flex pb-4 p-16" id="projects">
       <div className="h-screen w-full flex flex-row gap-x-8">
         <div className="h-max w-2/5 flex flex-col gap-y-8">
           <AnimateScrollDown>

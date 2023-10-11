@@ -7,6 +7,7 @@ import {
   AnimateScrollDownGroup2,
   AnimateScrollDownGroup3,
 } from "../animation/animate-scroll-down";
+import AnimateInfiniteHorizontal from "../animation/animate-infinite-horizontal";
 
 function Expertise() {
   const expertise = [
@@ -37,10 +38,13 @@ function Expertise() {
   ];
 
   return (
-    <section className="h-full flex flex-col pb-80 p-16">
+    <section
+      className="h-full flex flex-col pb-52 p-16 gap-y-16 overflow-x-hidden"
+      id="expertise"
+    >
       {/*Header */}
       <AnimateScrollDown>
-        <p className="text-center text-white text-7xl py-8 mb-4 font-medium">
+        <p className="text-center text-white text-7xl py-4 font-medium">
           My Expertise
         </p>
       </AnimateScrollDown>
@@ -59,6 +63,7 @@ function Expertise() {
       </div>
 
       {/*Infinite animated svgs */}
+      <AnimateInfiniteHorizontal />
     </section>
   );
 }

@@ -6,7 +6,7 @@ function Navbar() {
     {
       order: ".1",
       name: "home",
-      href: "#home",
+      href: "#",
     },
     {
       order: ".2",
@@ -36,12 +36,12 @@ function Navbar() {
         .toimetm
       </div>
       <nav className="flex pt-2">
-        <ul className="flex flex-row gap-x-8 text-neutral-200 hover:text-neutral-500">
+        <ul className="flex flex-row gap-x-8 text-neutral-500 transition delay-150 duration-400">
           {routes.map((el, index) => (
             <Link
               href={el.href}
               key={index}
-              className="flex flex-col hover:scale-105  hover:text-neutral-200 "
+              className="flex flex-col  hover:text-neutral-200 transition delay-150 duration-400"
             >
               <p className="text-xs text-right leading-3">{el.order}</p>
               <p className="text-md text-center leading-5">{el.name}</p>
