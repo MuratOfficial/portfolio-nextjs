@@ -10,7 +10,7 @@ function AnimatedText() {
     gsap.registerPlugin(TextPlugin);
     let ctx = gsap.context(() => {
       gsap.to(block.current, {
-        duration: 3,
+        duration: 4,
         text: "SOFTWARE ENGINEER, FULLSTACK DEVELOPER & CMS MANAGER",
         ease: "none",
       });

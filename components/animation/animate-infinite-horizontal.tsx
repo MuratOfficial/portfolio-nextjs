@@ -10,7 +10,7 @@ export function AnimateInfiniteHorizontal() {
       gsap.fromTo(
         ".box",
         {
-          x: -600,
+          x: -1400,
         },
         {
           x: 1400,
@@ -34,7 +34,7 @@ export function AnimateInfiniteHorizontal() {
       gsap.fromTo(
         ".box2",
         {
-          x: -800,
+          x: -1400,
         },
         {
           x: 1400,

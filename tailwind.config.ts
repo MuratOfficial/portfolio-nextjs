@@ -16,6 +16,21 @@ const config: Config = {
       colors: {
         "bg-theme": "rgba(30, 30, 38, 1)",
       },
+      keyframes: {
+        fadeDown: {
+          "0%, 100%": {
+            transform: "translateY(0%)",
+            opacity: "0.2",
+          },
+          "50%": {
+            transform: "translateY(80%)",
+            opacity: "1",
+          },
+        },
+      },
+      animation: {
+        fadeDown: "fadeDown 2s ease-in-out infinite",
+      },
     },
   },
   plugins: [],

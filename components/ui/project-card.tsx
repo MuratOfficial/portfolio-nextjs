@@ -21,7 +21,7 @@ function ProjectCard({ data, size }: ProjectCardProps) {
     <Link href={`projects/${data?.projectId}`}>
       <div
         className={cn(
-          "w-[380px] h-[400px] bg-white rounded-lg group/item flex flex-col justify-end hover:brightness-90 transition duration-150 delay-75",
+          "card w-[380px] h-[400px] bg-white rounded-lg group/item flex flex-col justify-end hover:brightness-90 transition duration-150 delay-75",
           size === "big" && "w-[792px] h-[640px]"
         )}
       >

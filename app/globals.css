@@ -7,5 +7,26 @@ body,
 :root {
   height: 100%;
   background-color: rgb(2 6 23);
-  scroll-behavior: smooth;
+  /* scroll-behavior: smooth; */
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgb(15 23 42);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(16, 16, 206, 0.575);
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 252, 255, 0.87);
 }

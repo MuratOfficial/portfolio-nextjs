@@ -1,12 +1,13 @@
+"use client";
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 
 function Navbar() {
   const routes = [
     {
       order: ".1",
       name: "home",
-      href: "#",
+      href: "",
     },
     {
       order: ".2",
@@ -29,6 +30,7 @@ function Navbar() {
       href: "#contact",
     },
   ];
+  const [link, setLink] = useState("#contact");
 
   return (
     <div className="flex flex-row p-2 lg:h-20 bg-transparent relative justify-center items-center">
