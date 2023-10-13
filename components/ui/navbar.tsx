@@ -1,33 +1,34 @@
 "use client";
+import { Home, Slack, FolderGit2, Gem, Mail } from "lucide-react";
 import Link from "next/link";
 import React, { useState } from "react";
 
 function Navbar() {
   const routes = [
     {
-      order: ".1",
+      order: <Home size={14} />,
       name: "home",
-      href: "",
+      href: `/#`,
     },
     {
-      order: ".2",
+      order: <Slack size={14} />,
       name: "expertise",
-      href: "#expertise",
+      href: "/#expertise",
     },
     {
-      order: ".3",
+      order: <FolderGit2 size={14} />,
       name: "projects",
-      href: "#projects",
+      href: "/#projects",
     },
     {
-      order: ".4",
+      order: <Gem size={14} />,
       name: "experience",
-      href: "#experience",
+      href: "/#experience",
     },
     {
-      order: ".5",
+      order: <Mail size={14} />,
       name: "contact",
-      href: "#contact",
+      href: "/#contact",
     },
   ];
   const [link, setLink] = useState("#contact");
@@ -43,7 +44,7 @@ function Navbar() {
             <Link
               href={el.href}
               key={index}
-              className="flex flex-col  hover:text-neutral-200 transition delay-150 duration-400"
+              className="flex flex-col  hover:text-neutral-200 transition delay-150 items-center duration-400"
             >
               <p className="text-xs text-right leading-3">{el.order}</p>
               <p className="text-md text-center leading-5">{el.name}</p>

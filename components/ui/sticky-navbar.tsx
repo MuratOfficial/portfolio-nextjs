@@ -1,32 +1,33 @@
 "use client";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
+import { Home, Slack, FolderGit2, Gem, Mail } from "lucide-react";
 import React, { useState, useEffect } from "react";
 
 function StickyNavbar() {
   const routes = [
     {
-      order: ".1",
+      order: <Home size={14} />,
       name: "home",
-      href: "#home",
+      href: "#",
     },
     {
-      order: ".2",
+      order: <Slack size={14} />,
       name: "expertise",
       href: "#expertise",
     },
     {
-      order: ".3",
+      order: <FolderGit2 size={14} />,
       name: "projects",
       href: "#projects",
     },
     {
-      order: ".4",
+      order: <Gem size={14} />,
       name: "experience",
       href: "#experience",
     },
     {
-      order: ".5",
+      order: <Mail size={14} />,
       name: "contact",
       href: "#contact",
     },
@@ -59,7 +60,7 @@ function StickyNavbar() {
             <Link
               href={el.href}
               key={index}
-              className="flex flex-col  hover:text-cyan-500 transition delay-150 duration-400"
+              className="flex flex-col  hover:text-cyan-500 transition items-center delay-150 duration-400"
             >
               <p className="text-[10px] text-right leading-3">{el.order}</p>
               <p className="text-sm text-center leading-5">{el.name}</p>
