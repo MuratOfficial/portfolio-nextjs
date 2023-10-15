@@ -8,32 +8,32 @@ import {
   AnimateScrollDownGroup3,
 } from "../animation/animate-scroll-down";
 import AnimateInfiniteHorizontal from "../animation/animate-infinite-horizontal";
+import { useTranslations } from "next-intl";
+import { Database, Figma, Wand2 } from "lucide-react";
 
 function Expertise() {
+  const t = useTranslations("Expertise");
   const expertise = [
     {
-      img: "",
-      highlight: "BackEnd",
-      heading: "Developer",
+      img: <Database size={44} color="blue" />,
+      highlight: t("highlight1"),
+      heading: t("heading1"),
       bgColor: "blue",
-      description:
-        "Experienced in both functional and OOP: Dart, Python, Java, JavaScript, TypeScript",
+      description: t("description1"),
     },
     {
-      img: "",
-      highlight: "FrontEnd",
-      heading: "Developer",
+      img: <Figma size={44} color="green" />,
+      highlight: t("highlight2"),
+      heading: t("heading2"),
       bgColor: "green",
-      description:
-        "Passionate about UI/UX. Over 4 years of development experience in HTML, CSS, JS, React and NextJS frameworks.",
+      description: t("description2"),
     },
     {
-      img: "",
-      highlight: "CMS, Content",
-      heading: "Manager",
+      img: <Wand2 size={44} color="orange" />,
+      highlight: t("highlight3"),
+      heading: t("heading3"),
       bgColor: "orange",
-      description:
-        "Experienced in both functional and OOP: Dart, Python, Java, JavaScript, TypeScript",
+      description: t("description3"),
     },
   ];
 
@@ -45,7 +45,7 @@ function Expertise() {
       {/*Header */}
       <AnimateScrollDown>
         <p className="text-center text-white text-7xl py-4 font-medium">
-          My Expertise
+          {t("header")}
         </p>
       </AnimateScrollDown>
 

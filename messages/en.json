@@ -1,0 +1,76 @@
+{
+  "Navbar": {
+    "name1": "home",
+    "name2": "expert",
+    "name3": "projects",
+    "name4": "experience",
+    "name5": "contact"
+  },
+  "Hero": {
+    "text": "SOFTWARE ENGINEER, FULLSTACK DEVELOPER & CMS MANAGER"
+  },
+  "Expertise": {
+    "header": "My Expertise",
+
+    "highlight1": "BackEnd",
+    "heading1": "Developer",
+    "description1": "Experienced in both functional and OOP: Python, JavaScript, TypeScript. Has experience in Django, DRF, REST APIs",
+    "highlight2": "FrontEnd",
+    "heading2": "Developer",
+    "description2": "Passionate about UI/UX. Over 4 years of development experience in HTML, CSS, JS, React and NextJS frameworks",
+    "highlight3": "CMS, Content",
+    "heading3": "Manager",
+    "description3": "Worked with production ready frameworks and CMS Applications as Tilda, Joomla, Wordpress and Webflow"
+  },
+  "Work": {
+    "headerWork": "My Work",
+    "descriptionWork": "Ambitious own SaaS project witch was presented on AstanaHub DigitalMediaDay. Project developed with React, NextJS, Django, PostgreSQL. Main idea is helping companies working with PDF documents. Project on Beta Testing Phase",
+    "nameWork": "PDF Chatter",
+    "button": "View Project"
+  },
+  "Filter": {
+    "filterAll": "All",
+    "filter1": "WebDev",
+    "filter2": "CMS",
+    "filter3": "Chat Bots",
+    "filterBy": "Filter By"
+  },
+  "Career": {
+    "headerCareer": "Career Path",
+    "role1": "Web Designer",
+    "name1": "Visit Kazakhstan",
+    "years1": "2017-2018",
+    "location1": "Shymkent, Kazakhstan",
+    "description1": "Worked as a Web Designer. MockUp, styled, Designed commercial static web sites.",
+    "role2": "IT Analyst, Data visualizator",
+    "name2": "KazAtomProm",
+    "years2": "2019-2020",
+    "location2": "Astana, Kazakhstan",
+    "description2": "Analyzation of the IT infrastructure. Worked with data, vizuialized it regarding Python, VBA, Power BI",
+    "role3": "Web Developer, Team Lead",
+    "name3": "KazPost",
+    "years3": "2020-2023",
+    "location3": "Astana, Kazakhstan",
+    "description3": "Analyzed, projected, developed SaaS (HR) products of the company.",
+    "role4": "Web Developer",
+    "name4": "Freelance (Upwork, Fiver, etc.)",
+    "years4": "2022-present",
+    "location4": "Remote",
+    "description4": "Working by own, collaboration with other teams. Web Development, Databases, Chat Bots, Data Vizualization"
+  },
+  "Contact": {
+    "text1": "Available for select freelance opportunities",
+    "text2": "Have an exciting project you need help with Send me an email or contact me via instant message!"
+  },
+  "Testimonials": {
+    "text1": "I have had the immense pleasure of collaborating with Toimet Murat on multiple projects, and I can confidently attest to his exceptional skills and proficiency in NextJS, React, Django, Python, and Tailwind. Murat possess a rare combination of technical expertise and creativity that sets him apart in the industry. His mastery of NextJS and React enables him to create highly efficient and engaging front-end interfaces. He has an impressive ability to bring designs to life, making the user experience seamless and visually appealing. ",
+    "author1": "Sagynish Korganbaev",
+    "description1": "Health Development",
+    "text2": "Murat is AMAZING! If you have any doubt about hiring him, ask me - I am really impressed by this guy!",
+    "author2": "Kairat Tumenbayev",
+    "description2": "ERG BSG Kazakstan",
+    "text3": "Working with Murat was a game-changer for our project. His expertise in Web Development elevated our platform, delivering a seamless, visually stunning, and highly functional web application that exceeded our expectations.",
+    "author3": "Symbat Kemelova",
+    "description3": "IP Symbat"
+  }
+}

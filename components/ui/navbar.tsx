@@ -2,32 +2,34 @@
 import { Home, Slack, FolderGit2, Gem, Mail } from "lucide-react";
 import Link from "next/link";
 import React, { useState } from "react";
+import { useTranslations } from "next-intl";
 
 function Navbar() {
+  const i = useTranslations("Navbar");
   const routes = [
     {
       order: <Home size={14} />,
-      name: "home",
+      name: i("name1"),
       href: `/#`,
     },
     {
       order: <Slack size={14} />,
-      name: "expertise",
+      name: i("name2"),
       href: "/#expertise",
     },
     {
       order: <FolderGit2 size={14} />,
-      name: "projects",
+      name: i("name3"),
       href: "/#projects",
     },
     {
       order: <Gem size={14} />,
-      name: "experience",
+      name: i("name4"),
       href: "/#experience",
     },
     {
       order: <Mail size={14} />,
-      name: "contact",
+      name: i("name5"),
       href: "/#contact",
     },
   ];

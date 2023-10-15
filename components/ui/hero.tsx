@@ -2,8 +2,10 @@ import React from "react";
 import { FadeInBlocksVertical } from "../animation/basic-load-animation";
 import AnimatedText from "../animation/animated-text";
 import Link from "next/link";
+// import { useTranslations } from "next-intl";
 
 function Hero() {
+  // const t = useTranslations("Hero");
   return (
     <div className="flex flex-col flex-wrap h-screen w-full items-center p-16">
       <img

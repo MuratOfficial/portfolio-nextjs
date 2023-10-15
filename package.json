@@ -15,6 +15,7 @@
     "locomotive-scroll": "^5.0.0-beta.8",
     "lucide-react": "^0.284.0",
     "next": "latest",
+    "next-intl": "^2.20.2",
     "react": "latest",
     "react-dom": "latest",
     "tailwind-merge": "^1.14.0",

@@ -5,8 +5,10 @@ import {
   AnimateScrollDown,
   AnimateScrollDownHorizontalLeft,
 } from "../animation/animate-scroll-down";
+import { useTranslations } from "next-intl";
 
 function Contacts() {
+  const t = useTranslations("Contact");
   const links = [
     { name: "Messenger", href: "www.facebook.com" },
     { name: "Linkedin", href: "www.linkedin.com" },
@@ -18,15 +20,10 @@ function Contacts() {
       <div className="w-5/12 h-[840px] bg-black flex flex-col p-16">
         <div className="h-1/2 w-full py-8 px-4 flex flex-col text-neutral-300 gap-y-16 justify-center items-center text-left">
           <AnimateScrollDownHorizontalLeft>
-            <p className="text-4xl">
-              Available for select freelance opportunities
-            </p>
+            <p className="text-4xl">{t("text1")}</p>
           </AnimateScrollDownHorizontalLeft>
           <AnimateScrollDown>
-            <p className="text-xl">
-              Have an exciting project you need help with? Send me an email or
-              contact me via instant message!
-            </p>
+            <p className="text-xl">{t("text2")}</p>
           </AnimateScrollDown>
         </div>
         <div className="h-1/2 w-full py-8 mt-8 px-4 gap-y-8 flex flex-col">

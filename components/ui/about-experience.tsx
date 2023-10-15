@@ -2,6 +2,7 @@ import React, { Fragment } from "react";
 import ProjectsCollage from "./projects-collage";
 import { AnimateScrollDownHorizontalLeft } from "../animation/animate-scroll-down";
 import { projects } from "@/service/get-data";
+import { useTranslations } from "next-intl";
 
 interface FilterProps {
   name: string;
@@ -9,18 +10,19 @@ interface FilterProps {
 }
 
 function AboutExperience() {
+  const t = useTranslations("Filter");
   const filters: FilterProps[] = [
-    { name: "All", number: projects.length },
+    { name: t("filterAll"), number: projects.length },
     {
-      name: "WebDev",
+      name: t("filter1"),
       number: projects.filter((el) => el.category === "Web Development").length,
     },
     {
-      name: "CMS",
+      name: t("filter2"),
       number: projects.filter((el) => el.category === "CMS").length,
     },
     {
-      name: "ChatBots",
+      name: t("filter3"),
       number: projects.filter((el) => el.category === "Chat Bot").length,
     },
   ];
@@ -29,7 +31,7 @@ function AboutExperience() {
     <div className="w-full flex flex-col p-16" id="experience">
       <AnimateScrollDownHorizontalLeft>
         <div className="text-neutral-500 flex flex-row font-sans text-lg font-semibold mb-8">
-          <p className="pr-2">Filter by</p>
+          <p className="pr-2">{t("filterBy")}</p>
           {filters.map((item, idx) => (
             <Fragment key={idx}>
               <p className="hover:text-cyan-300  cursor-pointer mr-3 relative">

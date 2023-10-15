@@ -9,7 +9,22 @@ import {
 import Link from "next/link";
 import React, { Fragment, useState } from "react";
 
-function ArticleCard() {
+interface ArticleProps {
+  role: string;
+  years: string;
+  location: string;
+  link: string;
+  name: string;
+  decription: string;
+  tags: string[];
+  logo: any;
+}
+
+interface ArticleCardProps {
+  data: ArticleProps;
+}
+
+function ArticleCard({ data }: ArticleCardProps) {
   const [open, setOpen] = useState(false);
 
   return (
@@ -21,8 +36,10 @@ function ArticleCard() {
             "bg-violet-700 transition-colors duration-300 delay-75"
         )}
       >
-        <p>Software Engineer @ Saimon Global Ltd</p>
-        <p className="mr-16">2109 - present</p>
+        <p>
+          {data.role} @ {data.name}
+        </p>
+        <p className="mr-16">{data.years}</p>
 
         <ChevronDown
           onClick={() => setOpen(true)}
@@ -53,39 +70,33 @@ function ArticleCard() {
         <div className="w-10/12 flex flex-col h-full py-6 gap-y-4">
           <div className="h-1/5 flex flex-row gap-x-2 text-neutral-300 text-sm">
             <MapPin color="rgb(109 40 217)" />
-            <p className="mr-4">Dhaka, Bangladesh</p>
+            <p className="mr-4">{data.location}</p>
 
             <Link
-              href="saimonglobal.com"
+              href={data.link}
               className="hover:text-violet-500 flex flex-row gap-x-2"
             >
               <ArrowUpRightSquare color="rgb(109 40 217)" />
-              saimonglobal.com
+              {data.name}
             </Link>
           </div>
           <div className="h-2/5 text-left text-neutral-200">
-            Developing front-end and mobile app solutions (B2C, B2B) in Travel
-            Tech on React/Next.js framework and Flutter SDK.
+            {data.decription}
           </div>
           <div className="h-2/5 flex flex-row gap-x-2">
-            <div className="py-1 px-3 h-7 rounded-2xl text-neutral-300 text-sm bg-blue-800">
-              React
-            </div>
-            <div className="py-1 px-3 h-7 rounded-2xl text-neutral-300 text-sm bg-blue-800">
-              Javascript
-            </div>
-            <div className="py-1 px-3 h-7 rounded-2xl text-neutral-300 text-sm bg-blue-800">
-              Typescript
-            </div>
-            <div className="py-1 px-3 h-7 rounded-2xl text-neutral-300 text-sm bg-blue-800">
-              Python
-            </div>
-            <div className="py-1 px-3 h-7 rounded-2xl text-neutral-300 text-sm bg-blue-800">
-              Bootstrap
-            </div>
+            {data.tags.map((el, ind) => (
+              <div
+                key={ind}
+                className="py-1 px-3 h-7 rounded-2xl text-neutral-300 text-sm bg-blue-800"
+              >
+                {el}
+              </div>
+            ))}
           </div>
         </div>
-        <div className="p-4 h-24 w-24 bg-orange-600 rounded-lg ml-4">Logo</div>
+        <div className="p-4 h-24 w-24  rounded-lg ml-4 justify-center items-center flex">
+          {data.logo}
+        </div>
       </div>
     </div>
   );
