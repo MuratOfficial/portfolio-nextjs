@@ -17,7 +17,8 @@
     "next": "latest",
     "react": "latest",
     "react-dom": "latest",
-    "tailwind-merge": "^1.14.0"
+    "tailwind-merge": "^1.14.0",
+    "zustand": "^4.4.3"
   },
   "devDependencies": {
     "@svgr/webpack": "^8.1.0",

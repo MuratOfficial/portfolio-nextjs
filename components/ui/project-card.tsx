@@ -1,18 +1,11 @@
 import { cn } from "@/lib/utils";
+import { ProjectItem } from "@/service/get-data";
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 import React, { Fragment } from "react";
 
-interface ProjectItemProps {
-  projectId: string;
-  type: string;
-  img: string;
-  label: string;
-  tags: string[];
-}
-
 interface ProjectCardProps {
-  data: ProjectItemProps;
+  data: ProjectItem;
   size: string;
 }
 
@@ -25,14 +18,15 @@ function ProjectCard({ data, size }: ProjectCardProps) {
           size === "big" && "w-[792px] h-[640px]"
         )}
       >
-        {/* <img className="w-full  rounded-md" src={data.img} /> */}
-        <div className=" p-6  flex flex-col bg-slate-900 rounded-b-md w-full h-28">
+        <img className="w-full  rounded-md" src={data?.images![0]} />
+
+        <div className=" p-6  flex flex-col bg-slate-900 rounded-b-md w-full h-32">
           <div className="relative">
             <h1 className="text-lg mb-3 text-neutral-200">{data.label}</h1>
           </div>
           <div className="justify-between flex flex-row">
-            <div className="mt-auto flex flex-row gap-x-4 ">
-              {data.tags.map((el, elidx) => (
+            <div className="mt-auto flex flex-row gap-x-4 gap-y-2 w-full flex-wrap">
+              {data.technologies.slice(0, 3).map((el, elidx) => (
                 <span
                   key={elidx}
                   className=" bg-neutral-200 bg-opacity-60 py-1 px-4 rounded-md text-slate-900 text-sm"

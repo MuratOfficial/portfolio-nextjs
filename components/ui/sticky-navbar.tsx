@@ -49,7 +49,7 @@ function StickyNavbar() {
   return (
     <div
       className={cn(
-        "flex flex-row collapse  lg:h-20 bg-slate-950 bg-blend-multiply bg-opacity-90 -translate-y-24 z-50 w-full relative justify-center items-center sticky top-0",
+        "flex flex-row collapse backdrop-blur-sm lg:h-20 bg-slate-950 bg-blend-multiply bg-opacity-90 -translate-y-24 z-50 w-full relative justify-center items-center sticky top-0",
         pos === "moved" &&
           "visible transition delay-150 duration-500 translate-y-0"
       )}

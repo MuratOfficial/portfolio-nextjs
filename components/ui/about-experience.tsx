@@ -1,16 +1,28 @@
 import React, { Fragment } from "react";
 import ProjectsCollage from "./projects-collage";
-import {
-  AnimateScrollDown,
-  AnimateScrollDownHorizontalLeft,
-} from "../animation/animate-scroll-down";
+import { AnimateScrollDownHorizontalLeft } from "../animation/animate-scroll-down";
+import { projects } from "@/service/get-data";
+
+interface FilterProps {
+  name: string;
+  number: number;
+}
 
 function AboutExperience() {
-  const filters = [
-    { name: "All", number: "12" },
-    { name: "WebDev", number: "07" },
-    { name: "CMS", number: "03" },
-    { name: "ChatBots", number: "02" },
+  const filters: FilterProps[] = [
+    { name: "All", number: projects.length },
+    {
+      name: "WebDev",
+      number: projects.filter((el) => el.category === "Web Development").length,
+    },
+    {
+      name: "CMS",
+      number: projects.filter((el) => el.category === "CMS").length,
+    },
+    {
+      name: "ChatBots",
+      number: projects.filter((el) => el.category === "Chat Bot").length,
+    },
   ];
 
   return (
@@ -20,12 +32,13 @@ function AboutExperience() {
           <p className="pr-2">Filter by</p>
           {filters.map((item, idx) => (
             <Fragment key={idx}>
-              <p className="hover:text-cyan-300 cursor-pointer mr-3 relative">
+              <p className="hover:text-cyan-300  cursor-pointer mr-3 relative">
                 {item.name}
                 <span className="text-xs absolute top-0 pr-1">
                   {item.number}
                 </span>
               </p>
+
               <span className="pr-4">/</span>
             </Fragment>
           ))}
