@@ -1,7 +1,7 @@
 {
   "Navbar": {
     "name1": "home",
-    "name2": "expert",
+    "name2": "expertise",
     "name3": "projects",
     "name4": "experience",
     "name5": "contact"
@@ -68,9 +68,25 @@
     "description1": "Health Development",
     "text2": "Murat is AMAZING! If you have any doubt about hiring him, ask me - I am really impressed by this guy!",
     "author2": "Kairat Tumenbayev",
-    "description2": "ERG BSG Kazakstan",
+    "description2": "ERG BSG Kazakhstan",
     "text3": "Working with Murat was a game-changer for our project. His expertise in Web Development elevated our platform, delivering a seamless, visually stunning, and highly functional web application that exceeded our expectations.",
     "author3": "Symbat Kemelova",
     "description3": "IP Symbat"
+  },
+  "Footer": {
+    "text1": "All rights reserved. Developed by"
+  },
+  "ProjectStatic": {
+    "text1": "Home",
+    "text2": "Projects",
+    "text3": "Client",
+    "text4": "Technologies",
+    "button1": "Open Project"
+  },
+  "project1": {
+    "category": "Web Development",
+    "label": "E-store DE'COLE",
+    "description": "E-store made in about 3 month. Store has 2 services: Admin dashboard and e-store itself. Admin dashboard has an API for communicate with store. Admin Dashboard made with Shadcn-UI. Database is on cloud PascaleDB (MySQL). For image store and edit used Cloudinary. Admin server can change background color, billboard, assets, products list, sizes, colors of assets in Store server. UPDATE: On Development, new requires",
+    "client": "IP Symbat"
   }
 }

@@ -3,6 +3,8 @@ import { Home, Slack, FolderGit2, Gem, Mail } from "lucide-react";
 import Link from "next/link";
 import React, { useState } from "react";
 import { useTranslations } from "next-intl";
+import NextLink from "next-intl/link";
+import { usePathname } from "next/navigation";
 
 function Navbar() {
   const i = useTranslations("Navbar");
@@ -54,6 +56,29 @@ function Navbar() {
           ))}
         </ul>
       </nav>
+      <div className="absolute right-4 text-neutral-500  justify-center items-center text-center m-4 text-md cursor-pointer">
+        <NextLink
+          href="/"
+          locale="kk"
+          className="mr-4 hover:text-neutral-300 focus:font-bold"
+        >
+          KZ
+        </NextLink>
+        <NextLink
+          href="/"
+          locale="en"
+          className="mr-4 hover:text-neutral-300 focus:font-bold"
+        >
+          EN
+        </NextLink>
+        <NextLink
+          href="/"
+          locale="ru"
+          className="hover:text-neutral-300 focus:font-bold"
+        >
+          RU
+        </NextLink>
+      </div>
     </div>
   );
 }

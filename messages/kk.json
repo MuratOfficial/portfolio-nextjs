@@ -1,1 +1,92 @@
-{}
+{
+  "Navbar": {
+    "name1": "basty",
+    "name2": "kabilet",
+    "name3": "jobalar",
+    "name4": "tajiribe",
+    "name5": "bailanys"
+  },
+  "Hero": {
+    "text": "BAGDARLAMALAUSHY, FULLSTACK ZHOBALAUSHY & CMS ORYNDAUSHY"
+  },
+  "Expertise": {
+    "header": "Menin Kabiletterim",
+
+    "highlight1": "BackEnd",
+    "heading1": "Zhobalau",
+    "description1": "OBB jane Functionaldy bagdarlamalau tajiribe: Python, JavaScript, TypeScript. Django, DRF, REST APIs boynsha biliktilik",
+    "highlight2": "FrontEnd",
+    "heading2": "Zhobalau",
+    "description2": "UI/UX ulken tajiribe. HTML, CSS, JS, React jane NextJS frameworktary boinwa 4 jyldyk jumis tajiribe",
+    "highlight3": "CMS, Content",
+    "heading3": "Manager",
+    "description3": "Tilda, Joomla, Wordpress jane Webflow siakty CMS kosimshalarimen jumis otili 3 jyl"
+  },
+  "Work": {
+    "headerWork": "Menin Jumysim",
+    "descriptionWork": "AstanaHub DigitalMediaDay kuninde jeke SaaS jobasy korsetildy. Joba React, NextJS, Django, PostgreSQL komegimen jasalgan. Negizgy idea - PDF kujattarymen jumys isteitin kompanialarga komektesu. Joba beta testileu kezeninde",
+    "nameWork": "PDF Chatter",
+    "button": "Jobany Koru"
+  },
+  "Filter": {
+    "filterAll": "Barligy",
+    "filter1": "WebDev",
+    "filter2": "CMS",
+    "filter3": "Chat Bottar",
+    "filterBy": "Syryptau"
+  },
+  "Career": {
+    "headerCareer": "Mansap Joly",
+    "role1": "Web Designer",
+    "name1": "Visit Kazakhstan",
+    "years1": "2017-2018",
+    "location1": "Shymkent, Kazakhstan",
+    "description1": "Web Designer retinde qyzmet atkardym. Kommercialyk jobalardyn static web saittarn arlep, proektiledm.",
+    "role2": "IT Analytik, Data visualizator",
+    "name2": "KazAtomProm",
+    "years2": "2019-2020",
+    "location2": "Astana, Kazakhstan",
+    "description2": "IT infrastructurany auditteumen ainalystym. Aqparatpen jumis, vizuializacialu Python, VBA, Power BI kuraldrymen oryndaldy",
+    "role3": "Web bagdarlamalaushy, Team Lead",
+    "name3": "KazPost",
+    "years3": "2020-2023",
+    "location3": "Astana, Kazakhstan",
+    "description3": "Kompanianyn oz SaaS (HR) kosymshalaryn proektileu, analyzdau jane kurastiru boinsha jumys",
+    "role4": "Web bagdarlamalaushy",
+    "name4": "Freelance (Upwork, t.b.)",
+    "years4": "2022-osy shaq",
+    "location4": "Qashyqtiktan jumys",
+    "description4": "Oz betinshe jumys jane baska da uimdarmen collaboracia. Web Development, Databasa, Chat Bottar, Data Vizualizacialau"
+  },
+  "Contact": {
+    "text1": "Jeke jobalardy oryndauga ardaim ashykpyn",
+    "text2": "Eger kyzykty, kerekty jobalarinizdi iske asiru kajet bolsa magan korsetilgen pochtaga khat joldanysdar!"
+  },
+  "Testimonials": {
+    "text1": "Men Toymet Muratpen köptegen jobalarda intimaqtaswdan ülken läzzat aldim jäne oniñ NextJS, React, Django, Python jäne Tailwind bağdarlamalarindaği erekşe dağdilari men şeberligin senimdi türde däleldey alamin. Murattiñ texnïkaliq täjirïbesi men şiğarmaşiliğiniñ sïrek üylesimi bar, bul oni salada erekşelendiredi. Oniñ NextJS jäne React bağdarlamalarin meñgerwi oğan joğari tïimdi jäne tartimdi ïnterfeyster jasawğa mümkindik beredi. Oniñ dïzayndi ömirge äkeletin äserli qabileti bar, bul paydalanwşi täjirïbesin üzdiksiz jäne körneki türde tartimdi etedi. ",
+    "author1": "Sagynish Korganbaev",
+    "description1": "Health Development",
+    "text2": "Murat KEREMET! Eger siz oni jumisqa alwğa kümäniñiz bolsa, menen surañiz - bul jigit mağan qatti äser etti!",
+    "author2": "Kairat Tumenbayev",
+    "description2": "ERG BSG Kazakhstan",
+    "text3": "Muratpen jumis jasaw bizdiñ joba üşin oyin özgertti. Oniñ veb-äzirlew salasindaği täjirïbesi bizdiñ platformani joğarilatip, bizdiñ kütkenimizden asip tüsetin birkelki, körneki jäne joğari fwnkcïonaldi veb-qosimşani usindi.",
+    "author3": "Symbat Kemelova",
+    "description3": "IP Symbat"
+  },
+  "Footer": {
+    "text1": "Barlyk quqyqtar saqtalgan. Jobany oryndagan - "
+  },
+  "ProjectStatic": {
+    "text1": "Basty",
+    "text2": "Jobalar",
+    "text3": "Tapsyrushy",
+    "text4": "Technologialar",
+    "button1": "Jobany koru"
+  },
+  "project1": {
+    "category": "Web bagdarlamalau",
+    "label": "DE'COLE e-dukeny",
+    "description": "Élektrondi düken şamamen 3 ayda jasalğan. Dükende 2 qizmet bar: äkimşi baqilaw taqtasi jäne élektrondi dükenniñ özi. Äkimşi baqilaw taqtasinda dükenmen baylanisw üşin API bar. Shadcn-UI kömegimen jasalğan äkimşi baqilaw taqtasi. Derekter bazasi PascaleDB (MySQL) bultinda. Keskindi saqtaw jäne öñdew üşin paydalanilğan Cloudinary. Äkimşi serveri Düken serverindegi fondiq tüsin, bïlbordti, aktïvterdi, önimder tizimin, ölşemderin, aktïvterdiñ tüsin özgerte aladi. JAÑARTW: Äzirlewde jaña talap etedi",
+    "client": "Symbat JK"
+  }
+}

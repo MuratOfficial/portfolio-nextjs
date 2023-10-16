@@ -51,8 +51,8 @@ function Hero() {
             strokeLinejoin="round"
             className="lucide lucide-chevrons-down animate-fadeDown"
           >
-            <path d="m7 6 5 5 5-5" />
-            <path d="m7 13 5 5 5-5" />
+            <path id="first" d="m7 6 5 5 5-5" />
+            <path id="second" d="m7 13 5 5 5-5" />
           </svg>
         </Link>
       </FadeInBlocksVertical>
