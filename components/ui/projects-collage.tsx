@@ -19,13 +19,13 @@ function ProjectsCollage() {
             ) : null}
           </div>
           {projects[2] !== undefined ? (
-            <ProjectCard size="" data={projects[2]} />
-          ) : null}
-          {projects[3] !== undefined ? (
-            <ProjectCard size="" data={projects[3]} />
+            <ProjectCard size="big" data={projects[2]} />
           ) : null}
         </div>
         <div className="flex flex-col w-1/3 gap-4 gap-y-4">
+          {projects[3] !== undefined ? (
+            <ProjectCard size="" data={projects[3]} />
+          ) : null}
           {projects[4] !== undefined ? (
             <ProjectCard size="" data={projects[4]} />
           ) : null}

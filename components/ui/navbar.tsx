@@ -62,21 +62,21 @@ function Navbar() {
           locale="kk"
           className="mr-4 hover:text-neutral-300 focus:font-bold"
         >
-          KZ
+          kz
         </NextLink>
         <NextLink
           href="/"
           locale="en"
           className="mr-4 hover:text-neutral-300 focus:font-bold"
         >
-          EN
+          en
         </NextLink>
         <NextLink
           href="/"
           locale="ru"
           className="hover:text-neutral-300 focus:font-bold"
         >
-          RU
+          ru
         </NextLink>
       </div>
     </div>

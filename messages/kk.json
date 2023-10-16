@@ -88,5 +88,29 @@
     "label": "DE'COLE e-dukeny",
     "description": "Élektrondi düken şamamen 3 ayda jasalğan. Dükende 2 qizmet bar: äkimşi baqilaw taqtasi jäne élektrondi dükenniñ özi. Äkimşi baqilaw taqtasinda dükenmen baylanisw üşin API bar. Shadcn-UI kömegimen jasalğan äkimşi baqilaw taqtasi. Derekter bazasi PascaleDB (MySQL) bultinda. Keskindi saqtaw jäne öñdew üşin paydalanilğan Cloudinary. Äkimşi serveri Düken serverindegi fondiq tüsin, bïlbordti, aktïvterdi, önimder tizimin, ölşemderin, aktïvterdiñ tüsin özgerte aladi. JAÑARTW: Äzirlewde jaña talap etedi",
     "client": "Symbat JK"
+  },
+  "project2": {
+    "category": "Web bagdarlamalau",
+    "label": "Headspace",
+    "description": "Bizdiñ medïtacïya veb-saytimiz üylesimdi paydalanwşi täjirïbesin jasay otirip, React pen Django-ni biriktiredi. React, qwatti JavaScript kitapxanasi paydalanwşilarğa oñay şarlawğa jäne özara äreketteswge mümkindik beretin dïnamïkaliq jäne jawap beretin ïnterfeysti qamtamasiz etedi. Sonimen qatar, Django, senimdi Python negizi, qawipsiz paydalanwşi awtentïfïkacïyasina, derekterdi basqarwğa jäne API ïnterfeysin tegis biriktirwge mümkindik beretin serverlik operacïyalardi tïimdi basqaradi. Birge olar paydalanwşilarğa tiniş jäne şoğirlanğan köñil-küydi qaliptastiratin, olardiñ qalawlarina säykes jekelendirilgen jetekşi medïtacïyalar jïnağin zerttewge mümkindik beredi. Bul texnologïyalardiñ birigwi zamanawï dïzayndi paydalanwşiniñ tiniş sayaxatimen biriktiretin platformani körsetedi, bul barliğina beybit medïtacïya täjirïbesin jeñildetedi.",
+    "client": "Headspace Inc."
+  },
+  "project3": {
+    "category": "CMS",
+    "label": "The Hub",
+    "description": "Frïlans fotografïyaliq veb-saytti äzirlew Webflow ïntwïtïvti ïnterfeysin qoldanwdan bastaladi, ol körneki türde tartimdi frontendi jasaw üşin. Webflow fotograf portfolïosiniñ tartimdi körsetilwin qamtamasiz ete otirip, dïzayndi birkelki teñşewge jäne ornalaswdi qurilimdawğa mümkindik beredi. RNR serverin serverge biriktirw dïnamïkaliq fwnkcïonaldiliqti qamtamasiz etedi, paydalanwşiniñ awtentïfïkacïyasi, derekterdi öñdew jäne paydalanwşiniñ tïimdi äreketteswi üşin derekqordi basqarw sïyaqti tapsirmalardi orindaydi. RNR MySQL sïyaqti derekqor jüyesimen birkelki jäne jawap beretin paydalanwşi täjirïbesin qamtamasiz ete otirip, mañizdi derekterdi uyimdastirw jäne alw üşin intimaqtasadi. Webflow dïzayn şeberligin PHP serverlik mümkindikterimen üylestire otirip, fotograftar bäsekege qabiletti frïlans nariğinda älewetti klïentterdi tarta otirip, öz jumistarin tïimdi körsete aladi.",
+    "client": "H Influencers"
+  },
+  "project4": {
+    "category": "CMS",
+    "label": "ano-identity",
+    "description": "Élektrondiq keñes berw veb-saytin äzirlew Tilda CMS, PHP, Figma jäne LottieFiles-tiñ üzdiksiz ïntegracïyasin qamtïdi. Tilda CMS oqw materïaldari men modwlderdi oñay teñşewge mümkindik beretin mazmundi jasaw jäne basqarw üşin ïkemdi platformani usinadi. PHP paydalanwşi awtentïfïkacïyasi, kwrs barisin baqilaw jäne stwdent jazbalari üşin derekqordi basqarw sïyaqti ïnteraktïvti mümkindikterdi qosatin serverlik fwnkcïyalar üşin paydalaniladi. Figma, senimdi dïzayn qurali, oqwdiñ oñtayli täjirïbesin qamtamasiz ete otirip, körneki tartimdi jäne ïntwïtïvti paydalanwşi ïnterfeysin jasawğa kömektesedi. LottieFiles ïntegracïyasi veb-saytti qiziqti anïmacïyalarmen jaqsartip, élektrondi oqitw platformasin stwdentter men oqitwşilar üşin tartimdi jäne serpindi etedi.",
+    "client": "TOO AD"
+  },
+  "project5": {
+    "category": "Web bagdarlamalau",
+    "label": "Oasis Living",
+    "description": "Marketïngtik veb-saytti äzirlew Django, Django REST Framework (DRF), PostgreSQL jäne ReactJS qwatti ïntegracïyasin qamtïdi. Django tïimdi derekterdi basqarwdi, paydalanwşiniñ awtentïfïkacïyasin jäne jalpi veb-sayt qurilimin jeñildetetin senimdi server qurilimin qamtamasiz etetin negiz retinde qizmet etedi. DRF jan-jaqti jäne qawipsiz API qurwğa mümkindik berw arqili Django-ni toliqtiradi, bul server men frontend arasindaği üzdiksiz baylanisqa mümkindik beredi. PostgreSQL, qwatti aşiq bastapqi relyacïyaliq derekqor, masştabtalw men önimdilikti qamtamasiz etetin derekterdi tïimdi saqtaw, izdew jäne basqarw üşin qoldaniladi. ReactJS, jan-jaqti JavaScript kitapxanasi, dïnamïkaliq jäne ïnteraktïvti paydalanwşi ïnterfeysin qurwğa, paydalanwşi täjirïbesin jäne marketïngtik veb-saytta qatiswdi oñtaylandirwğa mümkindik beretin frontendi quraydi.",
+    "client": "OasisLiving Ltd."
   }
 }
