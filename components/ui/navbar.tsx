@@ -1,12 +1,37 @@
 "use client";
 import { Home, Slack, FolderGit2, Gem, Mail } from "lucide-react";
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useEffect } from "react";
 import { useTranslations } from "next-intl";
 import NextLink from "next-intl/link";
-import { usePathname } from "next/navigation";
+import { Link as ScrollLink, Events, scrollSpy } from "react-scroll";
 
 function Navbar() {
+  useEffect(() => {
+    // Registering the 'begin' event and logging it to the console when triggered.
+    Events.scrollEvent.register("begin", (to, element) => {
+      console.log("begin", to, element);
+    });
+
+    // Registering the 'end' event and logging it to the console when triggered.
+    Events.scrollEvent.register("end", (to, element) => {
+      console.log("end", to, element);
+    });
+
+    // Updating scrollSpy when the component mounts.
+    scrollSpy.update();
+
+    // Returning a cleanup function to remove the registered events when the component unmounts.
+    return () => {
+      Events.scrollEvent.remove("begin");
+      Events.scrollEvent.remove("end");
+    };
+  }, []);
+
+  const handleSetActive = (to: string) => {
+    console.log(to);
+  };
+
   const i = useTranslations("Navbar");
   const routes = [
     {
@@ -17,25 +42,24 @@ function Navbar() {
     {
       order: <Slack size={14} />,
       name: i("name2"),
-      href: "/#expertise",
+      href: "expertise",
     },
     {
       order: <FolderGit2 size={14} />,
       name: i("name3"),
-      href: "/#projects",
+      href: "projects",
     },
     {
       order: <Gem size={14} />,
       name: i("name4"),
-      href: "/#experience",
+      href: "experience",
     },
     {
       order: <Mail size={14} />,
       name: i("name5"),
-      href: "/#contact",
+      href: "contact",
     },
   ];
-  const [link, setLink] = useState("#contact");
 
   return (
     <div className="flex flex-row p-2 lg:h-20 bg-transparent relative justify-center items-center">
@@ -44,15 +68,29 @@ function Navbar() {
       </div>
       <nav className="flex pt-2">
         <ul className="flex flex-row gap-x-8 text-neutral-500 transition delay-150 duration-400">
-          {routes.map((el, index) => (
-            <Link
-              href={el.href}
+          <Link
+            href={routes[0].href}
+            className="flex flex-col cursor-pointer hover:text-neutral-200 transition delay-150 items-center duration-400"
+          >
+            <p className="text-xs text-right leading-3">{routes[0].order}</p>
+            <p className="text-md text-center leading-5">{routes[0].name}</p>
+          </Link>
+          {routes.slice(1).map((el, index) => (
+            <ScrollLink
               key={index}
-              className="flex flex-col  hover:text-neutral-200 transition delay-150 items-center duration-400"
+              // activeClass="active"
+              to={el.href}
+              spy={true}
+              smooth={true}
+              offset={-100}
+              delay={150}
+              duration={1000}
+              onSetActive={handleSetActive}
+              className="flex flex-col cursor-pointer hover:text-neutral-200 transition delay-150 items-center duration-400"
             >
               <p className="text-xs text-right leading-3">{el.order}</p>
               <p className="text-md text-center leading-5">{el.name}</p>
-            </Link>
+            </ScrollLink>
           ))}
         </ul>
       </nav>

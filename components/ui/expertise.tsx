@@ -10,6 +10,7 @@ import {
 import AnimateInfiniteHorizontal from "../animation/animate-infinite-horizontal";
 import { useTranslations } from "next-intl";
 import { Database, Figma, Wand2 } from "lucide-react";
+import { Element } from "react-scroll";
 
 function Expertise() {
   const t = useTranslations("Expertise");
@@ -43,11 +44,13 @@ function Expertise() {
       id="expertise"
     >
       {/*Header */}
-      <AnimateScrollDown>
-        <p className="text-center text-white text-7xl py-4 font-medium">
-          {t("header")}
-        </p>
-      </AnimateScrollDown>
+      <Element name="expertise">
+        <AnimateScrollDown>
+          <p className="text-center text-white text-7xl py-4 font-medium">
+            {t("header")}
+          </p>
+        </AnimateScrollDown>
+      </Element>
 
       {/*Cards */}
       <div className="flex flex-row h-2/3 flex-wrap">

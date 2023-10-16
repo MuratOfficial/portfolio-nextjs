@@ -25,7 +25,7 @@ export const projects: ProjectItem[] = [
       "MySQL",
     ],
     client: "IP Symbat",
-    link: "https://furniture-lux.kz",
+    link: "https://github.com/MuratOfficial/ecommerce-store",
     images: [
       "/projects/project1/1st.PNG",
       "/projects/project1/2nd.PNG",

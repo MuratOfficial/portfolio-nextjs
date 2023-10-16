@@ -27,16 +27,21 @@ export default function Home() {
       <GoUp />
 
       {/*Start of Expertise Block */}
+
       <Expertise />
+
       {/*Start of Work Block */}
+
       <Work />
 
       {/*Start of Projects Preview Collage Block */}
       <AboutExperience />
       {/**Career Path block */}
+
       <CareerPath />
 
       {/*Contacts Block */}
+
       <Contacts />
     </main>
   );

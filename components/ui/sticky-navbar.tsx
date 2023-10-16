@@ -3,33 +3,40 @@ import { cn } from "@/lib/utils";
 import Link from "next/link";
 import { Home, Slack, FolderGit2, Gem, Mail } from "lucide-react";
 import React, { useState, useEffect } from "react";
+import { Link as ScrollLink, Events, scrollSpy } from "react-scroll";
+import { useTranslations } from "next-intl";
 
 function StickyNavbar() {
+  const i = useTranslations("Navbar");
+
+  const handleSetActive = (to: string) => {
+    console.log(to);
+  };
   const routes = [
     {
       order: <Home size={14} />,
-      name: "home",
-      href: "#",
+      name: i("name1"),
+      href: `/#`,
     },
     {
       order: <Slack size={14} />,
-      name: "expertise",
-      href: "#expertise",
+      name: i("name2"),
+      href: "expertise",
     },
     {
       order: <FolderGit2 size={14} />,
-      name: "projects",
-      href: "#projects",
+      name: i("name3"),
+      href: "projects",
     },
     {
       order: <Gem size={14} />,
-      name: "experience",
-      href: "#experience",
+      name: i("name4"),
+      href: "experience",
     },
     {
       order: <Mail size={14} />,
-      name: "contact",
-      href: "#contact",
+      name: i("name5"),
+      href: "contact",
     },
   ];
 
@@ -56,15 +63,29 @@ function StickyNavbar() {
     >
       <nav className="flex">
         <ul className="flex flex-row gap-x-12 text-cyan-200 transition delay-150 duration-400">
-          {routes.map((el, index: any) => (
-            <Link
-              href={el.href}
+          <Link
+            href={routes[0].href}
+            className="flex flex-col cursor-pointer hover:text-cyan-400 transition delay-150 items-center duration-400"
+          >
+            <p className="text-xs text-right leading-3">{routes[0].order}</p>
+            <p className="text-sm text-center leading-5">{routes[0].name}</p>
+          </Link>
+          {routes.slice(1).map((el, index) => (
+            <ScrollLink
               key={index}
-              className="flex flex-col  hover:text-cyan-500 transition items-center delay-150 duration-400"
+              // activeClass="active"
+              to={el.href}
+              spy={true}
+              smooth={true}
+              offset={-100}
+              delay={150}
+              duration={1000}
+              onSetActive={handleSetActive}
+              className="flex flex-col cursor-pointer hover:text-cyan-400 transition delay-150 items-center duration-400"
             >
-              <p className="text-[10px] text-right leading-3">{el.order}</p>
+              <p className="text-xs text-right leading-3">{el.order}</p>
               <p className="text-sm text-center leading-5">{el.name}</p>
-            </Link>
+            </ScrollLink>
           ))}
         </ul>
       </nav>

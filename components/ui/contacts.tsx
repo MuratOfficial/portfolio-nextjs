@@ -6,14 +6,18 @@ import {
   AnimateScrollDownHorizontalLeft,
 } from "../animation/animate-scroll-down";
 import { useTranslations } from "next-intl";
+import { Element } from "react-scroll";
 
 function Contacts() {
   const t = useTranslations("Contact");
   const links = [
-    { name: "Messenger", href: "www.facebook.com" },
-    { name: "Linkedin", href: "www.linkedin.com" },
-    { name: "Instagram", href: "www.instagram.com" },
-    { name: "Github", href: "www.github.com" },
+    { name: "Telegram", href: "https://t.me/Murat_Toimet" },
+    { name: "Linkedin", href: "https://www.linkedin.com/in/toimetm/" },
+    {
+      name: "Instagram",
+      href: "https://www.instagram.com/official_murattoimet/",
+    },
+    { name: "Github", href: "https://github.com/MuratOfficial" },
   ];
   return (
     <section className="w-full h-full flex flex-row " id="contact">
@@ -52,8 +56,11 @@ function Contacts() {
       </div>
 
       {/*Testimonials Block */}
+
       <div className="w-7/12 h-full">
-        <Testimonials />
+        <Element name="contact">
+          <Testimonials />
+        </Element>
       </div>
     </section>
   );
