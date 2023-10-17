@@ -1,5 +1,6 @@
 "use client";
 import gsap from "gsap";
+import Image from "next/image";
 import { useLayoutEffect, useRef } from "react";
 
 export function AnimateInfiniteHorizontal() {
@@ -135,7 +136,7 @@ export function AnimateInfiniteHorizontal() {
       <div className="flex-row flex gap-x-40">
         {logos.map((el, idx) => (
           <div className="box" key={idx}>
-            <img
+            <Image
               height={el.height}
               width={el.width}
               alt={el.alt}
@@ -147,7 +148,7 @@ export function AnimateInfiniteHorizontal() {
       <div className="flex-row flex gap-x-40">
         {logos1.map((el, idx) => (
           <div className="box1" key={idx}>
-            <img
+            <Image
               height={el.height}
               width={el.width}
               alt={el.alt}
@@ -159,7 +160,7 @@ export function AnimateInfiniteHorizontal() {
       <div className="flex-row flex gap-x-40">
         {logos2.map((el, idx) => (
           <div className="box2" key={idx}>
-            <img
+            <Image
               height={el.height}
               width={el.width}
               alt={el.alt}

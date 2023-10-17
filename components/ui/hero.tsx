@@ -2,25 +2,29 @@ import React from "react";
 import { FadeInBlocksVertical } from "../animation/basic-load-animation";
 import AnimatedText from "../animation/animated-text";
 import Link from "next/link";
+import Image from "next/image";
 // import { useTranslations } from "next-intl";
 
 function Hero() {
   // const t = useTranslations("Hero");
   return (
     <div className="flex flex-col flex-wrap h-screen w-full items-center p-16">
-      <img
+      <Image
+        alt="cone"
         className="absolute lg:right-20 xs:top-[540px] hover:opacity-60 dropshadow-lg hover:translate-x-6 transition duration-500 delay-150"
         height={200}
         width={200}
         src="Cone.svg"
       />
-      <img
+      <Image
+        alt="cube"
         className="absolute lg:left-20 lg:top-0 xs:top-10 hover:opacity-60 dropshadow-lg hover:rotate-6 transition duration-500 delay-150"
         height={200}
         width={200}
         src="Cube-2.svg"
       />
-      <img
+      <Image
+        alt="cylinder"
         className="absolute lg:top-14 hover:opacity-60 xs:collapse lg:visible dropshadow-lg hover:-rotate-12 transition duration-1000 delay-300"
         height={200}
         width={200}

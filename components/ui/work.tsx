@@ -4,6 +4,7 @@ import { AnimateScrollDown } from "../animation/animate-scroll-down";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
 import { Element } from "react-scroll";
+import Image from "next/image";
 
 function Work() {
   const t = useTranslations("Work");
@@ -26,12 +27,16 @@ function Work() {
         {/** Here will be Animated component */}
         <div className="lg:h-screen lg:w-3/5 relative flex md:flex-col xs:h-full xs:flex-col">
           {/* <AnimateSpecific /> */}
-          <img
+          <Image
             alt="pdf-chatter"
-            src="main-project.png"
+            src="/main-project.png"
             className="hover:scale-105 hover:brightness-125 hover:shadow-xl transition delay-200 duration-500 cursor-none"
             width={800}
             height={800}
+            sizes="(max-width: 640px) 100vw,
+    (max-width: 1280px) 50vw,
+    (max-width: 1536px) 33vw,
+    25vw"
           />
           <div className="h-1/5 w-full bottom-6 left-8 absolute flex flex-col gap-y-4 ">
             <p className="font-mono font-bold text-3xl drop-shadow-md lg:text-neutral-100 md:text-blue-500">
