@@ -53,17 +53,17 @@ function CareerPath() {
     },
   ];
   return (
-    <section className="h-max w-full  justify-center items-center pb-36 p-16 overflow-x-hidden">
+    <section className="h-max w-full  justify-center items-center pb-36 lg:p-16 xs:p-8 overflow-x-hidden">
       <Element name="experience">
         <AnimateScrollDownHorizontalLeft>
-          <p className=" text-7xl font-semibold drop-shadow-md text-neutral-100 text-center mb-6 mt-24 z-50 mb-12">
+          <p className=" lg:text-7xl xs:text-5xl font-semibold drop-shadow-md text-neutral-100 text-center mb-6 mt-24 z-50 mb-12">
             {t("headerCareer")}
           </p>
         </AnimateScrollDownHorizontalLeft>
       </Element>
 
       <AnimateScrollDownHorizontal>
-        <div className="flex flex-col items-center w-full h-1/2 gap-y-2 h-max">
+        <div className="flex flex-col items-center w-full justify-center gap-y-2 h-max">
           {careerPath.map((item, index) => (
             <ArticleCard key={index} data={item} />
           ))}

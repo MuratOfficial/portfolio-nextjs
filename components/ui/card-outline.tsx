@@ -16,7 +16,7 @@ function CardOutline({ data }: CardOutlineProps) {
   return (
     <div
       id={data.bgColor}
-      className="h-[360px] lg:w-[380px]   border-x-2 border-y-4 border-neutral-400 p-4 px-8 py-4 flex flex-col"
+      className="h-[360px] lg:w-[380px] xs:w-[320px]   border-x-2 border-y-4 border-neutral-400 p-4 px-8 py-4 flex flex-col"
     >
       <div className="flex flex-row h-1/3 pt-6 ">
         <div className="h-20 w-1/4">{data.img}</div>
@@ -34,7 +34,7 @@ function CardOutline({ data }: CardOutlineProps) {
         </div>
       </div>
       <p className="text-neutral-600 font-sans text-md">&lt;h3&gt;</p>
-      <div className="px-4 border-l-2 border-neutral-600 ml-4 text-neutral-300 my-1 font-mono text-lg font-semibold">
+      <div className="px-4 border-l-2 border-neutral-600 ml-4 text-neutral-300 my-1 font-mono lg:text-lg xs:text-md font-semibold">
         {data.description}
       </div>
       <p className="text-neutral-600 font-sans text-md">&lt;/h3&gt;</p>

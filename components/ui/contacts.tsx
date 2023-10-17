@@ -20,8 +20,8 @@ function Contacts() {
     { name: "Github", href: "https://github.com/MuratOfficial" },
   ];
   return (
-    <section className="w-full h-full flex flex-row " id="contact">
-      <div className="w-5/12 h-[840px] bg-black flex flex-col p-16">
+    <section className="grid grid-flow-row-dense lg:grid-cols-5 md:grid-cols-2 xs:grid-cols-2">
+      <div className="w-full h-full col-span-2 bg-black flex flex-col xs:p-4 lg:p-16">
         <div className="h-1/2 w-full py-8 px-4 flex flex-col text-neutral-300 gap-y-16 justify-center items-center text-left">
           <AnimateScrollDownHorizontalLeft>
             <p className="text-4xl">{t("text1")}</p>
@@ -34,7 +34,7 @@ function Contacts() {
           <AnimateScrollDownHorizontalLeft>
             <div className=" w-fit">
               <Link href="mailto:toimetm@gmail.com">
-                <p className="text-4xl transition-colors text-violet-700 hover:text-neutral-300 duration-500 delay-150 cursor-pointer hover:bg-violet-700 z-40">
+                <p className="lg:text-4xl xs:text-2xl transition-colors text-violet-700 hover:text-neutral-300 duration-500 delay-150 cursor-pointer hover:bg-violet-700 z-40">
                   toimetm@gmail.com
                 </p>
               </Link>
@@ -57,7 +57,7 @@ function Contacts() {
 
       {/*Testimonials Block */}
 
-      <div className="w-7/12 h-full">
+      <div className="w-full h-full col-span-3">
         <Element name="contact">
           <Testimonials />
         </Element>

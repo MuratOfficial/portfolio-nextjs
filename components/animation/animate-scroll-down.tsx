@@ -62,7 +62,11 @@ export function AnimateScrollDownHorizontal({
       }
     );
   }, []);
-  return <div ref={block}>{children}</div>;
+  return (
+    <div ref={block} className=" justify-center items-center flex">
+      {children}
+    </div>
+  );
 }
 
 export function AnimateScrollDownHorizontalLeft({
@@ -130,7 +134,11 @@ export function AnimateScrollDownGroup1({
       }
     );
   }, []);
-  return <div ref={block}>{children}</div>;
+  return (
+    <div ref={block} className="xs:m-auto">
+      {children}
+    </div>
+  );
 }
 
 export function AnimateScrollDownGroup2({
@@ -165,7 +173,11 @@ export function AnimateScrollDownGroup2({
       }
     );
   }, []);
-  return <div ref={block}>{children}</div>;
+  return (
+    <div ref={block} className="xs:m-auto">
+      {children}
+    </div>
+  );
 }
 
 export function AnimateScrollDownGroup3({
@@ -200,7 +212,11 @@ export function AnimateScrollDownGroup3({
       }
     );
   }, []);
-  return <div ref={block}>{children}</div>;
+  return (
+    <div ref={block} className="xs:m-auto">
+      {children}
+    </div>
+  );
 }
 
 // export function AnimateScrollDownNavbar({

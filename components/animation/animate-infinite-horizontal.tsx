@@ -128,7 +128,10 @@ export function AnimateInfiniteHorizontal() {
   ];
 
   return (
-    <div ref={block} className="flex flex-col gap-y-12 w-full -z-10">
+    <div
+      ref={block}
+      className="flex flex-col gap-y-12 w-full -z-10 lg:visible xs:collapse pb-24"
+    >
       <div className="flex-row flex gap-x-40">
         {logos.map((el, idx) => (
           <div className="box" key={idx}>

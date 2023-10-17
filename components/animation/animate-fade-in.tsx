@@ -37,7 +37,10 @@ export function AnimateFadeIn({ children }: { children: React.ReactNode }) {
   });
 
   return (
-    <div ref={block} className="flex flex-row gap-4 w-full h-max">
+    <div
+      ref={block}
+      className="grid lg:grid-cols-3 gap-8 justify-center h-max md:auto-cols-min"
+    >
       {children}
     </div>
   );

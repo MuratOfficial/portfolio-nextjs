@@ -14,18 +14,20 @@ function Billboard({ data }: BillboardProps) {
   return (
     <div className="flex flex-col">
       <div className="flex flex-col gap-y-8">
-        <div className="text-neutral-400 text-md ">{t("category")}</div>
-        <div className="text-neutral-200 font-semibold drop-shadow-lg text-7xl w-1/2">
+        <div className="text-neutral-400 text-md">{t("category")}</div>
+        <div className="text-neutral-200 font-semibold  drop-shadow-lg xs:text-4xl lg:text-7xl w-1/2">
           {t("label")}
         </div>
         <div className="text-neutral-400 font text-md w-1/2 pt-12">
           {s("text1")} &gt; {s("text2")} &gt; {t("label")}
         </div>
       </div>
-      <div className="mt-8 flex flex-row">
-        <div className="text-neutral-400  w-1/2 pr-12">{t("description")}</div>
+      <div className="mt-8 flex xs:flex-col lg:flex-row">
+        <div className="text-neutral-400 xs:w-full lg:w-1/2 pr-12">
+          {t("description")}
+        </div>
         <div className="flex flex-col w-1/2">
-          <div className="flex flex-row h-36 gap-x-8">
+          <div className="flex flex-row xs:h-48 lg:h-36 gap-x-8">
             <div className="text-md w-32 border-t border-neutral-400 py-4">
               <p className=" text-white font-medium">{s("text3")}</p>
               <p className=" text-neutral-400 font-normal">{t("client")}</p>

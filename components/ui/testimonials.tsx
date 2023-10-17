@@ -5,8 +5,8 @@ import { Bird, Dog, Snail } from "lucide-react";
 function Testimonials() {
   const t = useTranslations("Testimonials");
   return (
-    <div className="w-full h-[840px] flex flex-row">
-      <div className="h-full w-5/12 bg-gradient-to-r text-neutral-200 gap-y-6 from-purple-500 to-pink-500 p-8 flex flex-col">
+    <div className="w-full lg:h-[840px] xs:h-full flex lg:flex-row xs:flex-col flex-wrap">
+      <div className="h-full lg:w-5/12 xs:w-full bg-gradient-to-r text-neutral-200 gap-y-6 from-purple-500 to-pink-500 p-8 flex flex-col">
         <div className="flex flex-row justify-between">
           <div className="text-8xl text-purple-300 font-bold">❞</div>
           <div className="h-20 w-20 bg-blue-500 rounded-full border-white border-2 items-center flex justify-center">
@@ -20,7 +20,7 @@ function Testimonials() {
         </p>
         <p className="text-sm">{t("description1")}</p>
       </div>
-      <div className="h-full w-7/12 flex flex-col ">
+      <div className="h-full lg:w-7/12 xs:w-full flex flex-col ">
         <div className="flex h-1/2 bg-gradient-to-r from-violet-500 to-fuchsia-500 gap-y-6 p-8 flex-col text-neutral-200">
           <div className="flex flex-row justify-between">
             <div className="text-8xl text-purple-300 font-bold">❞</div>

@@ -27,7 +27,7 @@ function ProjectPage({ params }: { params: { projectId: string } }) {
   const project = projects.find((el) => el.projectId === params.projectId);
 
   return (
-    <main className="flex flex-col pt-14 mx-24 gap-y-16">
+    <main className="flex flex-col pt-14 xs:mx-8 lg:mx-24 gap-y-16">
       <Billboard data={project!} />
 
       <ToggleProject data={project?.images!} />

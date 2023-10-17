@@ -62,12 +62,15 @@ function Navbar() {
   ];
 
   return (
-    <div className="flex flex-row p-2 lg:h-20 bg-transparent relative justify-center items-center">
-      <div className="absolute left-4 font-semibold text-cyan-300 hover:text-cyan-500 justify-center items-center text-center m-4 text-2xl cursor-pointer">
+    <div className="flex xs:relative flex-row sm:flex-col xs:flex-col xs:p-2 z-50 lg:p-2 lg:h-20 bg-transparent relative justify-center items-center">
+      <Link
+        href="/#"
+        className="absolute xs:top-2 left-4 font-semibold text-cyan-300 hover:text-cyan-500 justify-center items-center text-center m-4 text-2xl cursor-pointer"
+      >
         .toimetm
-      </div>
-      <nav className="flex pt-2">
-        <ul className="flex flex-row gap-x-8 text-neutral-500 transition delay-150 duration-400">
+      </Link>
+      <nav className="flex pt-2 lg:relative xs:absolute xs:collapse lg:visible xs:top-0">
+        <ul className="flex lg:flex-row sm:flex-col xs:flex-col gap-x-8 text-neutral-500 transition delay-150 duration-400">
           <Link
             href={routes[0].href}
             className="flex flex-col cursor-pointer hover:text-neutral-200 transition delay-150 items-center duration-400"
@@ -94,7 +97,7 @@ function Navbar() {
           ))}
         </ul>
       </nav>
-      <div className="absolute right-4 text-neutral-500  justify-center items-center text-center m-4 text-md cursor-pointer">
+      <div className="absolute xs:top-2 right-4 text-neutral-500  justify-center items-center text-center m-4 text-md cursor-pointer">
         <NextLink
           href="/"
           locale="kk"

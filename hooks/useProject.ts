@@ -6,15 +6,19 @@ interface ProjectProps {
   items: ProjectItem[];
   filterItems: (category: string) => void;
 }
+const temporary = projects;
 
 const useProject = create(
   persist<ProjectProps>(
     (set) => ({
-      items: projects,
+      items: temporary,
       filterItems: (category: string) => {
-        const filteredList = projects.filter(
+        let filteredList = temporary.filter(
           (item) => item.category === category
         );
+        if (category === "All") {
+          filteredList = temporary;
+        }
         set({
           items: filteredList,
         });

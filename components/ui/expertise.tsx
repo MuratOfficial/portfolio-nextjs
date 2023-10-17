@@ -39,21 +39,18 @@ function Expertise() {
   ];
 
   return (
-    <section
-      className="h-full flex flex-col pb-52 p-16 gap-y-16 overflow-x-hidden"
-      id="expertise"
-    >
+    <section className="h-full flex flex-col pb-48 lg:p-16 xs:p-2 gap-y-16 overflow-x-hidden">
       {/*Header */}
       <Element name="expertise">
         <AnimateScrollDown>
-          <p className="text-center text-white text-7xl py-4 font-medium">
+          <p className="text-center text-white lg:text-7xl xs:text-3xl py-4 font-medium">
             {t("header")}
           </p>
         </AnimateScrollDown>
       </Element>
 
       {/*Cards */}
-      <div className="flex flex-row h-2/3 flex-wrap">
+      <div className="flex lg:flex-row xs:flex-col xs:h-full lg:h-2/3 flex-wrap w-full">
         <AnimateScrollDownGroup1>
           <CardOutline data={expertise[0]} />
         </AnimateScrollDownGroup1>

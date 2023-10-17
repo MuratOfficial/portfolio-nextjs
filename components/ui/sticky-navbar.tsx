@@ -56,19 +56,19 @@ function StickyNavbar() {
   return (
     <div
       className={cn(
-        "flex flex-row collapse backdrop-blur-sm lg:h-20 bg-slate-950 bg-blend-multiply bg-opacity-90 -translate-y-24 z-50 w-full relative justify-center items-center sticky top-0",
+        "flex flex-row overflow-x-hidden collapse backdrop-blur-sm lg:h-20 bg-slate-950 bg-blend-multiply bg-opacity-90 -translate-y-24 z-50 w-full relative justify-center items-center sticky top-0",
         pos === "moved" &&
           "visible transition delay-150 duration-500 translate-y-0"
       )}
     >
       <nav className="flex">
-        <ul className="flex flex-row gap-x-12 text-cyan-200 transition delay-150 duration-400">
+        <ul className="flex flex-row xs:gap-x-6 xs:py-2 lg:gap-x-12 text-cyan-200 transition delay-150 duration-400">
           <Link
             href={routes[0].href}
             className="flex flex-col cursor-pointer hover:text-cyan-400 transition delay-150 items-center duration-400"
           >
             <p className="text-xs text-right leading-3">{routes[0].order}</p>
-            <p className="text-sm text-center leading-5">{routes[0].name}</p>
+            <p className="text-sm text-center  leading-5">{routes[0].name}</p>
           </Link>
           {routes.slice(1).map((el, index) => (
             <ScrollLink
@@ -84,7 +84,7 @@ function StickyNavbar() {
               className="flex flex-col cursor-pointer hover:text-cyan-400 transition delay-150 items-center duration-400"
             >
               <p className="text-xs text-right leading-3">{el.order}</p>
-              <p className="text-sm text-center leading-5">{el.name}</p>
+              <p className="text-sm text-center  leading-5">{el.name}</p>
             </ScrollLink>
           ))}
         </ul>

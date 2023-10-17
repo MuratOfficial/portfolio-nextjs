@@ -7,6 +7,7 @@ export interface ProjectItem {
   technologies: string[];
   link?: string;
   images?: string[];
+  bigFrame?: boolean;
 }
 
 export const projects: ProjectItem[] = [
