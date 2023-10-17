@@ -6,6 +6,7 @@ import Navbar from "@/components/ui/navbar";
 import { NextIntlClientProvider } from "next-intl";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
+import Favicon from "@/public/favicon.ico";
 
 export function generateStaticParams() {
   return [{ locale: "en" }, { locale: "kk" }, { locale: "ru" }];
@@ -14,6 +15,7 @@ export function generateStaticParams() {
 export const metadata: Metadata = {
   title: "toimetm Portfolio",
   description: "Toimet Murat's Portfolio",
+  icons: [{ rel: "icon", url: Favicon.src }],
 };
 
 const inter = Inter({ subsets: ["latin"] });
