@@ -24,6 +24,7 @@
   },
   "devDependencies": {
     "@svgr/webpack": "^8.1.0",
+    "@types/locomotive-scroll": "^4.1.1",
     "@types/node": "latest",
     "@types/react": "latest",
     "@types/react-dom": "latest",
