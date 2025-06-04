@@ -1,36 +1,84 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<h1 align="center">💼 Portfolio (Next.js)</h1>
+<p align="center">
+  A personal portfolio website built with Next.js to showcase projects, skills, and experience.
+</p>
 
-## Getting Started
+<p align="center">
+  <img src="https://img.shields.io/github/languages/top/MuratOfficial/portfolio-nextjs?style=flat-square" />
+  <img src="https://img.shields.io/github/license/MuratOfficial/portfolio-nextjs?style=flat-square" />
+  <img src="https://img.shields.io/github/stars/MuratOfficial/portfolio-nextjs?style=flat-square" />
+</p>
 
-First, run the development server:
+---
+
+## ✨ About the Project
+
+This **portfolio website** was built using **Next.js** and modern frontend technologies to create a fast, SEO-friendly, and responsive personal brand site. It includes sections for an introduction, project showcase, skills, and contact form. Ideal for presenting development skills and sharing professional experience.
+
+---
+
+## 🧰 Tech Stack
+
+- **Framework**: [Next.js](https://nextjs.org/)
+- **Styling**: Tailwind CSS
+- **Language**: TypeScript or JavaScript (depending on version)
+- **Forms**: Contact form (basic or with external service)
+- **Animations**: Framer Motion (optional)
+- **Deployment**: Vercel / Netlify
+
+---
+
+## ⚙️ Features
+
+- ✅ Responsive layout (mobile-friendly)
+- ✅ About, Projects, Skills, and Contact sections
+- ✅ SEO-friendly architecture
+- ✅ Easy project adding via configuration or file updates
+- ✅ Animated interactions and transitions (optional)
+- ⏳ Blog or CMS integration (optional)
+
+---
+
+## 📦 Getting Started
 
 ```bash
+# 1. Clone the repository
+git clone https://github.com/MuratOfficial/portfolio-nextjs.git
+cd portfolio-nextjs
+
+# 2. Install dependencies
+npm install
+
+# 3. Start the development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+*App will be available at:*
+`📍 http://localhost:3000`
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🧩 Folder Structure
+```text
+portfolio-nextjs/
+├── components/
+├── pages/
+├── public/
+├── styles/
+├── utils/
+├── next.config.js
+└── tailwind.config.js
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## 📌 Roadmap
+* Add dynamic project data (JSON or CMS)
+* Dark mode support
+* Contact form integration (e.g., EmailJS, Formspree)
+* Blog section with MDX or headless CMS
+* Internationalization (i18n)
 
-## Learn More
+## 🙋‍♂️ About the Author
+Created with ❤️ by MuratOfficial — feel free to connect and check out other projects!
 
-To learn more about Next.js, take a look at the following resources:
+## 📄 License
+This project is licensed under the MIT License. See the LICENSE file for more info.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+<p align="center"><b>Made with passion and precision by <a href="https://github.com/MuratOfficial">MuratOfficial</a></b></p>
